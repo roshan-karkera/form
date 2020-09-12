@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WDL 4.2</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css ">
+    <style>
+        .box {
+            margin-left: 30%;
+            border-top: 10px solid rgb(148, 9, 167);
+            height: 100%px;
+            width: 40%;
+            padding-top: 10px;
+            box-shadow: -4px 4px 4px 0px rgba(0, 0, 0, 0.75);
+        }
+        
+        .input-icons i {
+            position: absolute;
+            top: 40px;
+            left: 33%;
+            color: rgb(124, 120, 126);
+        }
+        
+        .input-icons {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        
+        .icon {
+            padding: 10px;
+            min-width: 40px;
+        }
+        
+        .input-field {
+            width: 82%;
+            padding: 10px 10px 10px 40px;
+            margin-left: 30px;
+        }
+        
+        .input-icons1 i {
+            position: absolute;
+            top: 93px;
+            left: 33%;
+            color: rgb(135, 130, 138);
+        }
+        
+        .input-icons1 {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        
+        .input-field1 {
+            color: rgb(15, 27, 53);
+            margin-top: 3px;
+            width: 82%;
+            padding: 10px 10px 10px 40px;
+            margin-left: 30px;
+        }
+        
+        .input-icons2 i {
+            position: absolute;
+            top: 32.4%;
+            left: 33%;
+            color: rgb(135, 130, 138);
+        }
+        
+        .input-icons2 {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        
+        .input-field2 {
+            color: rgb(15, 27, 53);
+            margin-top: 3px;
+            width: 32%;
+            padding: 10px 10px 10px 40px;
+            margin-left: 30px;
+        }
+        
+        .input-icons3 a {
+            position: absolute;
+            top: 40.4%;
+            left: 33%;
+            color: rgb(135, 130, 138);
+            font-weight: bolder;
+            font-size: 13px;
+        }
+        
+        .input-icons3 {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        
+        .input-field3 {
+            color: rgb(15, 27, 53);
+            margin-top: 3px;
+            width: 32%;
+            padding: 10px 10px 10px 40px;
+            margin-left: 30px;
+        }
+        
+        .input-icons4 i {
+            position: absolute;
+            top: 47.4%;
+            left: 33%;
+            color: rgb(135, 130, 138);
+            font-weight: bolder;
+            font-size: 13px;
+        }
+        
+        .input-icons4 button {
+            position: absolute;
+            top: 46.1%;
+            left: 59.23%;
+            color: white;
+            border-bottom: 6px solid rgb(109, 4, 122);
+            background-color: rgb(165, 14, 165);
+            font-size: 16px;
+            border-top: 0px;
+            border-right: 0px;
+            border-left: 0px;
+            border-radius: 3px;
+            padding: 8px 20px 0px 20px;
+        }
+        
+        .input-icons4 {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        
+        .input-field4 {
+            color: rgb(15, 27, 53);
+            margin-top: 3px;
+            width: 82%;
+            padding: 10px 10px 10px 40px;
+            margin-left: 30px;
+        }
+        
+        .input-icons5 i {
+            position: absolute;
+            top: 54.5%;
+            left: 33%;
+            color: rgb(135, 130, 138);
+        }
+        
+        .input-icons5 {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        
+        .input-field5 {
+            color: rgb(15, 27, 53);
+            margin-top: 3px;
+            width: 27%;
+            padding: 10px 10px 10px 40px;
+            margin-left: 30px;
+        }
+        
+        .input-icons6 i {
+            position: absolute;
+            top: 54.5%;
+            left: 49.4%;
+            color: rgb(135, 130, 138);
+        }
+        
+        .input-icons6 {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        
+        .input-field6 {
+            color: rgb(15, 27, 53);
+            margin-top: 3px;
+            width: 40.2%;
+            padding: 10px 10px 10px 40px;
+            margin-left: 30px;
+        }
+        
+        .input-icons7 i {
+            position: absolute;
+            top: 62%;
+            left: 33%;
+            color: rgb(135, 130, 138);
+        }
+        
+        .input-icons7 {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        
+        .input-field7 {
+            color: rgb(15, 27, 53);
+            margin-top: 3px;
+            width: 82%;
+            padding: 10px 10px 10px 40px;
+            margin-left: 30px;
+        }
+        
+        .input-icons8 i {
+            position: absolute;
+            top: 69.4%;
+            left: 33%;
+            color: rgb(135, 130, 138);
+        }
+        
+        .input-icons8 {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        
+        .input-field8 {
+            color: rgb(15, 27, 53);
+            margin-top: 3px;
+            width: 82%;
+            padding: 10px 10px 10px 40px;
+            margin-left: 30px;
+        }
+        
+        .input-icons9 i {
+            position: absolute;
+            top: 77%;
+            left: 33%;
+            color: rgb(135, 130, 138);
+        }
+        
+        .input-icons9 {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        
+        .input-field9 {
+            color: rgb(15, 27, 53);
+            margin-top: 3px;
+            width: 82%;
+            padding: 10px 10px 10px 40px;
+            margin-left: 30px;
+        }
+        
+        .input-icons10 i {
+            position: absolute;
+            top: 84%;
+            left: 33%;
+            color: rgb(135, 130, 138);
+        }
+        
+        .input-icons10 {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        
+        .input-field10 {
+            color: rgb(15, 27, 53);
+            margin-top: 3px;
+            width: 82%;
+            padding: 10px 10px 10px 40px;
+            margin-left: 30px;
+        }
+        
+        .input-icons11 i {
+            position: absolute;
+            top: 91.3%;
+            left: 33%;
+            color: rgb(135, 130, 138);
+        }
+        
+        .input-icons11 {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        
+        .input-field11 {
+            color: rgb(15, 27, 53);
+            margin-top: 3px;
+            width: 82%;
+            padding: 10px 10px 10px 40px;
+            margin-left: 30px;
+        }
+        
+        .input-icons12 i {
+            position: absolute;
+            top: 98.6%;
+            left: 33%;
+            color: rgb(118, 112, 121);
+        }
+        
+        .input-icons12 {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        
+        .input-field12 {
+            color: rgb(15, 27, 53);
+            margin-top: 3px;
+            width: 33%;
+            padding: 10px 10px 10px 40px;
+            margin-left: 30px;
+        }
+        
+        .input-icons13 i {
+            position: absolute;
+            top: 98.6%;
+            left: 52%;
+            color: rgb(135, 130, 138);
+        }
+        
+        .input-icons13 {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        
+        .input-field13 {
+            color: rgb(15, 27, 53);
+            margin-top: 3px;
+            width: 34.5%;
+            padding: 10px 10px 10px 40px;
+            margin-left: 30px;
+        }
+        
+        .input-icons14 h4 {
+            position: absolute;
+            top: 104.3%;
+            left: 33%;
+            color: rgb(118, 112, 121);
+            font-weight: bolder;
+            font-size: 13px;
+        }
+        
+        .input-icons14 {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        
+        .input-field14 {
+            color: rgb(15, 27, 53);
+            margin-top: 3px;
+            width: 33%;
+            padding: 10px 10px 10px 40px;
+            margin-left: 30px;
+        }
+        
+        .input-icons15 i {
+            position: absolute;
+            top: 106%;
+            left: 52%;
+            color: rgb(135, 130, 138);
+        }
+        
+        .input-icons15 {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        
+        .input-field15 {
+            color: rgb(15, 27, 53);
+            margin-top: 3px;
+            width: 34.5%;
+            padding: 10px 10px 10px 40px;
+            margin-left: 30px;
+        }
+        
+        .input-icons16 i {
+            position: absolute;
+            top: 113.5%;
+            left: 33%;
+            color: rgb(135, 130, 138);
+        }
+        
+        .input-icons16 {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        
+        .input-field16 {
+            color: rgb(15, 27, 53);
+            margin-top: 3px;
+            width: 82%;
+            padding: 10px 10px 10px 40px;
+            margin-left: 30px;
+        }
+        
+        .submitbox {
+            height: 100%;
+            width: 99%;
+            background-color: rgba(204, 132, 218, 0.3);
+            border-top: 1px solid black;
+            border-bottom: 0px;
+            border-left: 0px;
+            border-right: 0px;
+            padding: 12px 0px 10px 10px;
+        }
+        
+        .submitbox button {
+            margin-left: 62%;
+            color: white;
+            border-bottom: 6px solid rgb(109, 4, 122);
+            background-color: rgb(165, 14, 165);
+            font-size: 25px;
+            border-top: 0px;
+            border-right: 0px;
+            border-left: 0px;
+            border-radius: 3px;
+            padding: 10px 60px 10px 60px;
+        }
+        
+        .checkarea {
+            margin-top: 3px;
+            margin-left: 30px;
+        }
+        
+        .check {
+            margin-top: 5px;
+        }
+        
+        #check1,
+        #check2,
+        #check3 {
+            padding-right: 15%;
+        }
+        
+        .radioarea {
+            margin-top: 3px;
+            margin-left: 30px;
+        }
+        
+        .radio {
+            margin-top: 5px;
+        }
+        
+        #radio1,
+        #radio2,
+        #radio3 {
+            padding-right: 11%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="input-icons">
+            <i class="fa fa-pencil"></i>
+            <input class="input-field" type="text" placeholder="Input text with icon">
+        </div>
+        <div class="input-icons1">
+            <i class="fa fa-bars"></i>
+            <input class="input-field1" value="select 1" type="text">
+        </div>
+        <div class="checkarea">
+            <a class="check-text">&nbspCheckboxes</a><br>
+            <div class="check">
+                <input type="checkbox">
+                <a id="check1">Checkbox 1</a>
+                <input type="checkbox">
+                <a id="check2">Checkbox 2</a>
+                <input type="checkbox">
+                <a id="check3">Checkbox 3</a>
+            </div>
+        </div>
+        <div class="radioarea">
+            <a class="radio-text">&nbspRadio Buttons</a><br>
+            <div class="check">
+                <input type="radio">
+                <a id="radio1">Radio Button  1</a>
+                <input type="radio">
+                <a id="radio2">Radio Button  2</a>
+                <input type="radio">
+                <a id="radio3">Radio Button 3</a>
+            </div>
+        </div>
+        <div class="input-icons2">
+            <i class="fa fa-calendar"></i>
+            <input class="input-field2" placeholder="Date" type="text">
+        </div>
+        <div class="input-icons3">
+            <a class="number">123</a>
+            <input class="input-field3" placeholder="Number" type="text">
+        </div>
+        <div class="input-icons4">
+            <i class="fa fa-download"></i>
+            <button>Choose Files</button>
+            <input class="input-field4" placeholder="No file selected" type="text">
+        </div>
+        <div class="input-icons5">
+            <i class="fa fa-user"></i>
+            <input class="input-field5" placeholder="Name First" type="text">
+            <a class="input-icons6">
+                <i class="fa fa-user"></i>
+                <input class="input-field6" placeholder="Name Last" type="text">
+            </a>
+        </div>
+        <div class="input-icons7">
+            <i class="fa fa-envelope"></i>
+            <input class="input-field7" placeholder="Email" type="email">
+        </div>
+        <div class="input-icons8">
+            <i class="fa fa-lock"></i>
+            <input class="input-field8" placeholder="Password" type="password">
+        </div>
+        <div class="input-icons9">
+            <i class="fa fa-phone"></i>
+            <input class="input-field9" placeholder="Password" type="tel">
+        </div>
+        <div class="input-icons10">
+            <i class="fa fa-location-arrow"></i>
+            <input class="input-field10" placeholder="Street Addresss" type="text">
+        </div>
+        <div class="input-icons11">
+            <i class="fa fa-location-arrow"></i>
+            <input class="input-field11" placeholder="Addresss Line 2" type="text">
+        </div>
+        <div class="input-icons12">
+            <i class="fa fa-building"></i>
+            <input class="input-field12" placeholder="City" type="text">
+            <a class="input-icons13">
+                <i class="fa fa-building"></i>
+                <input class="input-field13" placeholder="&nbsp;&nbsp;&nbsp;State / Province / Region" type="text">
+            </a>
+        </div>
+        <div class="input-icons14">
+            <h4 class="number1">123</h4>
+            <input class="input-field14" placeholder="Postal / Zip Code" type="text">
+            <a class="input-icons15">
+                <i class="fa fa-bars"></i>
+                <input class="input-field15" value="&nbsp;&nbsp;&nbsp;---Select a country---" type="text">
+            </a>
+        </div>
+        <div class="input-icons16">
+            <i class="fa fa-globe"></i>
+            <input class="input-field16" placeholder="Website" type="text">
+        </div>
+        <div class="submitbox">
+            <button>Submit</button>
+        </div>
+    </div>
+</body>
+
+</html>

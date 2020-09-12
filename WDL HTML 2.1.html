@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WDL 4.1</title>
+    <style>
+        #submit {
+            padding-top: 14px;
+            padding-bottom: 14px;
+        }
+        
+        button {
+            background-color: #BCBCBC;
+            border-radius: 2px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <h1>Register for Miss Bakers Space Cadets</h1>
+        <fieldset>
+            <legend>Personal details</legend>
+            <label>First Name</label><br>
+            <input type="text" placeholder="First name only"><br><br>
+
+            <label>Last Name</label><br>
+            <input type="text" placeholder="Last name only"><br><br>
+
+            <label>Date of Birth</label><br>
+            <input type="text" placeholder="dd / mm / yy"><br><br>
+
+            <label>Email</label><br>
+            <input type="email" placeholder="example@domain.com"><br><br>
+
+            <label>URL</label><br>
+            <input type="url" placeholder="http://mysite.com"><br><br>
+
+            <label>Telephone</label><br>
+            <input type="tel" placeholder="Eg. +447000 000000"><br><br>
+
+            <label>Shoesize</label><br>
+            <input type="number" min="3" max="20" placeholder="9"><br><br>
+
+            <label>Flying Skill level (1 low-100 high)</label><br>
+            <input type="range" min="0" max="100" value="5"><br><br>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Card details</legend>
+
+            <fieldset>
+                <legend>Card type</legend>
+
+                <input class="radio_button" type="radio" name="payment_method">
+                <label name="payment_method">VISA</label>
+
+                <input lass="radio_button" type="radio" name="payment_method">
+                <label name="payment_method">Mastercard</label>
+
+                <input lass="radio_button" type="radio" name="payment_method">
+                <label name="payment_method">AMEX</label>
+            </fieldset><br>
+
+            <label>Name</label><br>
+            <input type="text" placeholder="Name as it appear in your Card"><br><br>
+
+            <label>Card number</label><br>
+            <input type="text"><br><br>
+
+            <label>Security code</label><br>
+            <input type="text"><br><br>
+
+            <label>Expiry Date</label><br>
+            <input type="text" placeholder="---------, ----"><br><br>
+        </fieldset><br>
+
+        <fieldset id="submit">
+            <button type="submit">Place Order</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>
